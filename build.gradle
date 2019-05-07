@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group 'com.sergey.didenko.design'
+version = '1.0'
+sourceCompatibility = 1.8
+
+buildDir = 'build'
+project.buildDir = "$buildDir"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
+wrapper {
+    distributionUrl='https://services.gradle.org/distributions/gradle-5.1.1-bin.zip'
+}
